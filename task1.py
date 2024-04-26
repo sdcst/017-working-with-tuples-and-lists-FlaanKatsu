@@ -24,4 +24,9 @@ The animal at that index is Dog
 
 
 
-animals =
+animals = ["Cat","Fish","Dog","Bear","Turtle"]
+n = int(input("please enter a number from 0 - 4: "))
+if n <= 4 and n >= 0:
+    print(animals[n])
+else:
+    print("error: invalid input")

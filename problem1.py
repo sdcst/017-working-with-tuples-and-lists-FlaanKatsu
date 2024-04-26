@@ -19,3 +19,12 @@ Enter the replacement:Dan
 ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Dan']
 
 """
+
+nlist = ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Rick']
+print(f"there is a list of people.\nthe list is \"{nlist}\"")
+n = input("choose a person from the list to destroy: ")
+try:
+    a = list.index(n)
+    print(a)
+except:
+    print("user input error")

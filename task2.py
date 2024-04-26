@@ -23,3 +23,13 @@ Enter a word: virus
 
 ['apple', 'worm', 'dollar', 'shingle', 'virus']
 """
+string = []
+i = 0
+for i in range(0, 5):
+    if i == 0:
+        n = input("please type a word: ")
+    elif i != 0:
+        n = input("please type a word again: ")
+    string.append(n)
+
+print(string)
