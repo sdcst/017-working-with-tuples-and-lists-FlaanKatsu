@@ -24,7 +24,10 @@ nlist = ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Rick']
 print(f"there is a list of people.\nthe list is \"{nlist}\"")
 n = input("choose a person from the list to destroy: ")
 try:
-    a = list.index(n)
-    print(a)
+    a = nlist.index(n)
+    nlist.pop(a)
+    b = input("Enter the name of a person to take their place: ")
+    nlist.insert(a, b)
+    print(nlist)
 except:
     print("user input error")

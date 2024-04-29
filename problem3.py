@@ -23,5 +23,10 @@ Enter an integer:-1
 
 The largest number you entered is 92
 """
-
-
+ls = []
+print("You will need to enter 10 intagers.")
+for i in range (0,10):
+    e = int(input("please input an intager: "))
+    ls.append(e)
+    ls.sort()
+print(f"The largest number you entered was {ls[-1]}.")
